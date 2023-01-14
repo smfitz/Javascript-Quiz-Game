@@ -8,25 +8,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dev/css/style.css">
-    <script defer src="./dev/js/index.js"></script>
     <title>Quiz Game</title>
 </head>
 <body>
     <div class="container">
         <div id="question-container" class="hide">
-            <div class="question">Question</div>
+            <div class="question" id="main-question">Question</div>
             <div class="btn-btn" id="answer-buttons">
-                <button class="btn">Choice 1</button>
-                <button class="btn">Choice 2</button>
-                <button class="btn">Choice 3</button>
-                <button class="btn">Choice 4</button>
+                <button class="btn" id="btn">Choice 1</button>
+                <button class="btn" id="btn">Choice 2</button>
+                <button class="btn" id="btn">Choice 3</button>
+                <button class="btn" id="btn">Choice 4</button>
             </div>
         </div>
         <div class="controls">
             <div class="intro-header" id="intro-header">
                 <h1 class="show">Welcome to my Quiz!</h1>
-                <h3 class="show">The quiz is 5 questions with a time-limit of 30 seconds!</h3>
-                <h4 class="show">Getting a question wrong leaves you with -5 seconds. Good Luck!</h4>
+                <h3 class="show">The quiz is 5 questions total with a time-limit of 30 seconds!</h3>
+                <h4 class="show">Getting a question wrong leaves you with a -5 seconds penalty. Good Luck!</h4>
             </div>
         <div class="main-buttons">
             <button id="start-btn" class="start-btn btn">Start</button>
@@ -34,5 +33,6 @@
         </div>
       </div>
     </div>
+    <script src="./dev/js/index.js"></script>
 </body>
 </html>
