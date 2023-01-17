@@ -23,15 +23,29 @@ body {
     background-color: hsl(var(--hue), 100%, 30%);
 }
 
-/* Styling for background colors to change */
-
-body.correct {
-    --hue: var(--hue-correct);
+.timer {
+    display: flex;
+    justify-content: left;
+    align-items: top;
+    padding-bottom: 1rem;
 }
 
-body.wrong {
-    --hue: var(--hue-wrong);
+ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+    outline: none;
+    list-style: none;
 }
+
+.answer-buttons {
+    padding: 0;
+    margin: 0;
+}
+
 
 /* Styling for question container */
 
@@ -66,6 +80,7 @@ h1, h3, h4 {
     font-weight: bold;
     padding: 10px 20px;
     font-size: 1.2rem;
+    margin-top: 1rem;
 }
 
 .main-buttons {
@@ -74,7 +89,7 @@ h1, h3, h4 {
     align-items: center;
 }
 
-.btn {
+button {
     --hue: var(--hue-neutral);
     background-color: hsl(var(--hue), 100%, 40%);
     border: 3px solid hsl(var(--hue), 100%, 30%);
@@ -84,24 +99,17 @@ h1, h3, h4 {
     outline: none;
 }
 
-.btn:hover {
+button:hover {
     border-color: hsl(var(--hue), 100%, 20%);
     color: hsl(var(--hue), 100%, 20%);
 }
 
-.btn.correct {
-    --hue: var(--hue-correct);
-    color: hsl(var(--hue), 100%, 20%);
-}
-
-.btn.wrong {
-    --hue: var(--hue-wrong);
-}
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 /* setup to hide elements */

@@ -10,15 +10,14 @@
     <link rel="stylesheet" href="./dev/css/style.css">
     <title>Quiz Game</title>
 </head>
-<body>
+<body id="main-body">
     <div class="container">
         <div id="question-container" class="hide">
+            <div class="timer" id="timer"></div>
             <div class="question" id="main-question">Question</div>
             <div class="btn-btn" id="answer-buttons">
-                <button class="btn" id="btn">Choice 1</button>
-                <button class="btn" id="btn">Choice 2</button>
-                <button class="btn" id="btn">Choice 3</button>
-                <button class="btn" id="btn">Choice 4</button>
+                <ul id="answer-buttons"></ul>
+                <h3 id="response" class=""></h3>
             </div>
         </div>
         <div class="controls">
